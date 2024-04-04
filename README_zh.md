@@ -1,6 +1,5 @@
 # NotifyMe-Tuorials
-这是一份如何使用NotifyMe的指南。NotifyMe是一个安卓App，通过此App你可以向你的安卓设备发送通知。
-## 功能
+这是一份如何使用NotifyMe的指南。NotifyMe是一个安卓App，通过此App你可以向你的安卓设备发送通知。  
 * 在安卓设备上接收消息，应用场景包括：  
   * 通知转发；  
   * 物联网设备或服务器的消息推送；  
