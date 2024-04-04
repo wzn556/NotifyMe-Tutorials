@@ -13,7 +13,7 @@
 网址：```https://asia-east2-notifyme-f7507.cloudfunctions.net/send```  
 请求头：```Content-Type:application/json```  
 JSON：  
-```
+```JSON
 {
     "data": {
         "to": "d-NnQPgQTYGF_JhRK6iFiB:APA91bET0S07sI1bOYBQ7FrWMBcQ53SyxnwO-ODXP19mDzku4ZijawFSQFT_LZ5cUqKPjDbd61-UBzzNiiiz_vkkYoK6jnu-zWU2qo1mDKYdy2wnjsZ99g_9j-vZ-5sm2QwNDWYAF_vh",
@@ -23,11 +23,11 @@ JSON：
             "title": "NotifyMe！",
             "body": "This is a test message!",
             "iconType": 0,
-            "smallIcon":"1322",
-            "largeIcon":"345",
-            "id":"-11",
+            "smallIcon":"smallIcon_0",
+            "largeIcon":"largeIcon_0",
+            "id":"0",
             "encryption":false,
-            "iv":"",
+            "iv":"UkAjUPykxX1Eu4h7",
             "invisible":false,
             "browse":"https://www.baidu.com/s?wd=search_word",
             "channel":"quicker_channel"
