@@ -9,7 +9,7 @@
 * 可自定义通知通道，便于管理通知的优先级、铃声及振动等。  
 * 可接收加密消息，提升通知的安全性。  
 ## 如何使用
-### 方法1：通过http请求POST发送JSON格式的消息数据  
+### 方法1：通过http请求POST发送消息  
 网址：```https://asia-east2-notifyme-f7507.cloudfunctions.net/send```  
 请求头：```Content-Type:application/json```  
 JSON：  
