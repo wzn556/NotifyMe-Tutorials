@@ -10,9 +10,14 @@
 * 可接收加密消息，提升通知的安全性。  
 ## 如何使用
 ### 方法1：通过http请求POST发送消息  
-网址：```https://asia-east2-notifyme-f7507.cloudfunctions.net/send```  
-请求头：```Content-Type:application/json```  
-JSON：  
+- 地址
+  - 网址1：```https://asia-east2-notifyme-f7507.cloudfunctions.net/send```
+  - 网址2：```https://notifyme-f7507.azurewebsites.net/api/send```
+    - 发送http请求时，使用`网址1`或`网址2`均可，但建议优先使用`网址1`。
+    - 因为`网址2`也是通过将数据传输至`网址1`，从而发送消息的，因此使用`网址1`可以获得**更低的延迟**、**减少可能发生的错误**并**降低数据泄露的可能性**。
+    - `网址2`更适合在无法访问`网址1`的情况下使用（如中国大陆）。
+- 请求头：```Content-Type:application/json```
+- JSON：
 ```JSON
 {
     "data": {
