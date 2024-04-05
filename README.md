@@ -11,12 +11,12 @@ This tuotials is for NotifyMe, which is a app that can recevied notifications ba
 ## How to Use
 ### Method 1: Send message in JSON format through HTTP request POST  
 - HTTP：
-  - URL1：```https://asia-east2-notifyme-f7507.cloudfunctions.net/send```
-  - URL2：```https://notifyme-f7507.azurewebsites.net/api/send```
+  - URL1：`https://asia-east2-notifyme-f7507.cloudfunctions.net/send`
+  - URL2：`https://notifyme-f7507.azurewebsites.net/api/send`
     - When sending http requests, use either `URL1` or `URL2`, but it is recommended that `URL1` be preferred.
     - Using `URL1` allows you to achieve **lower latency**, **reduce errors**, and **reduce the likelihood of data breaches**.
     - `URL2` is better used when you can't access `URL1`.
-- Headers：```Content-Type:application/json```  
+- Headers：`Content-Type:application/json`  
 - JSON：  
 ```JSON
 {
