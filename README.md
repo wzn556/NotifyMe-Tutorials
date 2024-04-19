@@ -1,4 +1,4 @@
-# NotifyMe-Tuorials
+# NotifyMe-Tutorials
 This tuotials is for NotifyMe, which is a app that can recevied notifications based on FCM on your android devices.
 * To receive messages on Android devices, the application scenarios include:  
   * Notification forwarding;  
