@@ -1,6 +1,6 @@
 # NotifyMe-Tutorials | NotifyMe指南
 This tuotials is for NotifyMe, which is a app that can recevied notifications based on FCM on your android devices.  
-&nbsp;
+  
 这是一份如何使用NotifyMe的指南。NotifyMe是一个安卓App，通过此App你可以向你的安卓设备发送通知。
 * To receive messages on Android devices, the application scenarios include:
   * Notification forwarding;
