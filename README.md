@@ -23,5 +23,4 @@ This tuotials is for NotifyMe, which is a app that can recevied notifications ba
 [![](https://img.shields.io/endpoint?color=green&logo=google-play&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dcom.wzn556.notifyme%26l%3DGoogle%2520Play%26m%3D%24version)](https://play.google.com/store/apps/details?id=com.wzn556.notifyme)
 
 ## How to Use | 如何使用
-### Wiki
-[English](https://github.com/wzn556/NotifyMe-Tutorials/wiki/NotifyMe‐Tutorials) | [中文](https://github.com/wzn556/NotifyMe-Tutorials/wiki/NotifyMe‐Tutorials_zh)  
+### [Wiki](https://github.com/wzn556/NotifyMe-Tutorials/wiki)
