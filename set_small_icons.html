@@ -1,0 +1,924 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://notifyme.521933.xyz/set_small_icons.html">
+      
+      
+        <link rel="prev" href="usage_scenarios.html">
+      
+      
+        <link rel="next" href="notification_click_action.html">
+      
+      
+      <link rel="icon" href="assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>设置小图标 - Notifyme Tutorials</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="." title="Notifyme Tutorials" class="md-header__button md-logo" aria-label="Notifyme Tutorials" data-md-component="logo">
+      
+  <img src="assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Notifyme Tutorials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              设置小图标
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="https://notifyme.521933.xyz" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://notifyme.521933.xyz" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Notifyme Tutorials" class="md-nav__button md-logo" aria-label="Notifyme Tutorials" data-md-component="logo">
+      
+  <img src="assets/logo.svg" alt="logo">
+
+    </a>
+    Notifyme Tutorials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="home.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quick_use.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    快速使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="advanced_use.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    进阶使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="usage_scenarios.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    应用场景
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    设置小图标
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="set_small_icons.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    设置小图标
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      小图标概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用内置图标
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用自定义图标
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用自定义图标">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      图片添加
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      网络图片
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      批量导入
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="批量导入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用示例文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用“Android 通知图标规范适配计划”图标库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      自定义导入文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON 图标
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="notification_click_action.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    通知点击动作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="other_push_type.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    其他推送类型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="question_and_answer.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    疑难解答
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      小图标概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用内置图标
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用自定义图标
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="使用自定义图标">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      图片添加
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      网络图片
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      批量导入
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="批量导入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用示例文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用“Android 通知图标规范适配计划”图标库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      自定义导入文件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON 图标
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">设置小图标</h1>
+<h2 id="_2">小图标概述</h2>
+<p>小图标指下图中1处指向的图标：</p>
+<p><img alt="notification_mark" src="assets/notification_mark.png" /></p>
+<p>小图标通过<code>iconType</code>和<code>smallIcon</code>两个键值进行控制，支持以下几种使用方式：</p>
+<ul>
+<li>使用应用内置通知图标；</li>
+<li>使用 <strong>配置/小图标/＋</strong> 添加的通知图标（应用内提前设置）；</li>
+<li>使用网络通知图标（发送消息时设置）；</li>
+<li>使用 <strong>配置/小图标/顶部菜单/导入小图标</strong> 导入的通知图标（应用内提前设置）；</li>
+<li>使用 JSON 设置通知图标（发送消息时设置）。</li>
+</ul>
+<h2 id="_3">使用内置图标</h2>
+<ul>
+<li>发送消息时，将<code>iconType</code>（int）设置为<code>0~5</code>任意一键值，<code>smallIcon</code>无需设置。示例如下：</li>
+</ul>
+<pre><code class="language-json">{
+    &quot;data&quot;: {
+        &quot;uuid&quot;: &quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;,
+        &quot;ttl&quot;: 86400,
+        &quot;priority&quot;: &quot;normal&quot;,
+        &quot;data&quot;: {
+            ...
+            &quot;iconType&quot;: 0,
+            &quot;smallIcon&quot;:&quot;&quot;,
+            ...
+        }
+    }
+}
+</code></pre>
+<ul>
+<li><code>iconType</code>键值与图标的对应关系如下表：</li>
+</ul>
+<table>
+    <tr style="font-weight: bold;text-align: center;">
+        <td >iconType</td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr style="background-color: #D8D8D8; text-align: center;">
+        <td>对应图标</td>
+        <td><img src="/assets/small_icons/bulidin/0.png" alt="0" /></td>
+        <td><img src="/assets/small_icons/bulidin/1.png" alt="1" /></td>
+        <td><img src="/assets/small_icons/bulidin/2.png" alt="2" /></td>
+        <td><img src="/assets/small_icons/bulidin/3.png" alt="3" /></td>
+        <td><img src="/assets/small_icons/bulidin/4.png" alt="4" /></td>
+        <td><img src="/assets/small_icons/bulidin/5.png" alt="5" /></td>
+    </tr>
+</table>
+
+<h2 id="_4">使用自定义图标</h2>
+<h3 id="_5">图片添加<a id="add-picture"></a></h3>
+<ul>
+<li>点击 <strong>配置/小图标/＋</strong> 后，选择图片，并输入图标名（以<code>Lena</code>为例），完成小图标添加。<blockquote>
+<p>此种方法添加的小图标并不符合Google规范，在部分系统（主要为原生、类原生系统）上会出现图标为全白，或被其他图形包裹等情况。如果显示出现问题，请使用<a href="#batch-import">批量导入</a>或 <a href="#json-icon">JSON 图标</a>。</p>
+</blockquote>
+</li>
+</ul>
+<p><img alt="add" src="assets/small_icons/add/add.png" /> <img alt="add_complete" src="assets/small_icons/add/add_complete.png" /></p>
+<ul>
+<li>发送消息时，将<code>iconType</code>（int）设置为<code>6</code>，将<code>smallIcon</code>（string）设置为导入小图标时输入的名称（以<code>Lena</code>为例），即可使用。</li>
+</ul>
+<pre><code class="language-json">{
+    &quot;data&quot;: {
+        &quot;uuid&quot;: &quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;,
+        &quot;ttl&quot;: 86400,
+        &quot;priority&quot;: &quot;normal&quot;,
+        &quot;data&quot;: {
+            ...
+            &quot;iconType&quot;: 6,
+            &quot;smallIcon&quot;:&quot;Lena&quot;,
+            ...
+        }
+    }
+}
+</code></pre>
+<h3 id="_6">网络图片</h3>
+<ul>
+<li>发送消息时，将<code>iconType</code>（int）设置为<code>7</code>，将<code>smallIcon</code>（string）设置为图片的网址，即可使用。以 <code>https://raw.githubusercontent.com/wzn556/NotifyMe-Tutorials/main/assets/small_icons/web/Lena.jpeg</code> 为例：</li>
+</ul>
+<pre><code class="language-json">{
+    &quot;data&quot;: {
+        &quot;uuid&quot;: &quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;,
+        &quot;ttl&quot;: 86400,
+        &quot;priority&quot;: &quot;normal&quot;,
+        &quot;data&quot;: {
+            ...
+            &quot;iconType&quot;: 7,
+            &quot;smallIcon&quot;:&quot;https://raw.githubusercontent.com/wzn556/NotifyMe-Tutorials/main/assets/small_icons/web/Lena.jpeg&quot;,
+            ...
+        }
+    }
+}
+</code></pre>
+<blockquote>
+<p>首次使用时 NotifyMe 会从网络保存此图片缓存，由于网络访问需要时间，可能会存在一定延迟。再次使用时，NotifyMe会直接从缓存调用此图片。</p>
+<p>若网络图片发生变更，需在 <strong>配置/顶部菜单/其他小图标/缓存图标</strong> 单击删除该图标（或通过 <strong>缓存图标</strong> 界面的 <strong>菜单/清空图标</strong> 删除所有缓存图标），再次发送消息使 NotifyMe 重新缓存该图标。</p>
+<p>此方法与<a href="#add-picture">图片添加</a>原理相同，同样可能存在显示效果不佳的问题，若出现此问题请使用<a href="#batch-import">批量导入</a>或 <a href="#json-icon">JSON 图标</a>。</p>
+</blockquote>
+<p><img alt="web_view" src="assets/small_icons/web/web_view.png" /> <img alt="web_cache" src="assets/small_icons/web/web_cache.png" /> <img alt="web_clear" src="assets/small_icons/web/web_clear.png" /></p>
+<h3 id="_7">批量导入<a id="batch-import"></a></h3>
+<h4 id="_8">使用示例文件<a id="batch-import-example"></a></h4>
+<ul>
+<li>通过 <strong>配置/小图标/顶部菜单/导入小图标</strong> 可批量导入图标，支持使用网址导入或从文件导入。以 <code>https://raw.githubusercontent.com/wzn556/NotifyMe-Tutorials/main/import.json</code> 为例，可将该网址复制至文本栏，点击 <strong>确定 </strong>使用；或下载文件，通过 <strong>选择文件</strong> 导入。</li>
+<li>发送消息时，将<code>iconType</code>（int）设置为<code>8</code>，将<code>smallIcon</code>（string）设置为导入图标的名称（例如本示例中的<code>cuiliang.quicker</code>），即可使用。</li>
+</ul>
+<p><img alt="import_0" src="assets/small_icons/import/import_0.png" /> <img alt="import_1" src="assets/small_icons/import/import_1.png" /> <img alt="import_view" src="assets/small_icons/import/import_view.png" /></p>
+<pre><code class="language-json">{
+    &quot;data&quot;: {
+        &quot;uuid&quot;: &quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;,
+        &quot;ttl&quot;: 86400,
+        &quot;priority&quot;: &quot;normal&quot;,
+        &quot;data&quot;: {
+            ...
+            &quot;iconType&quot;: 8,
+            &quot;smallIcon&quot;:&quot;cuiliang.quicker&quot;,
+            ...
+        }
+    }
+}
+</code></pre>
+<h4 id="android">使用“Android 通知图标规范适配计划”图标库<a id="batch-import-fankes"></a></h4>
+<p>“Android 通知图标规范适配计划”旨在：为国内 Android 不规范的 APP 和厂商适配原生通知图标与规范图标修复，规范国内乱七八糟的 APP 生态，让国内用户也能体验到原生 Android 通知图标的规范美。</p>
+<p>项目地址：<a href="https://fankes.github.io/AndroidNotifyIconAdapt/">Android 通知图标规范适配计划</a> | <a href="https://github.com/fankes/AndroidNotifyIconAdapt">Github</a></p>
+<p>使用方法：</p>
+<ul>
+<li>通过 <strong>配置/小图标/顶部菜单/导入小图标</strong> 批量导入图标，可将网址 <code>https://raw.githubusercontent.com/fankes/AndroidNotifyIconAdapt/main/APP/NotifyIconsSupportConfig.json</code> 复制至文本栏，点击 <strong>确定</strong> 使用；或下载文件，通过 <strong>选择文件 </strong>导入。</li>
+<li>具体调用方法同<a href="#batch-import-example">使用示例文件</a>。</li>
+</ul>
+<blockquote>
+<p>请尊重原项目作者@fankes的劳动成果，转载时<strong>务必在显著的地方声明对原项目的引用和来源</strong>。</p>
+</blockquote>
+<p><img alt="import_0" src="assets/small_icons/import/import_0.png" /> <img alt="import_1" src="assets/small_icons/import/import_1.png" /> <img alt="import_view" src="assets/small_icons/import/import_view_1.png" /></p>
+<h4 id="_9">自定义导入文件</h4>
+<ul>
+<li>导入<code>.json</code>文件，其内容为JSON数组（格式见 <a href="https://raw.githubusercontent.com/wzn556/NotifyMe-Tutorials/main/import.json">https://raw.githubusercontent.com/wzn556/NotifyMe-Tutorials/main/import.json</a> ），该JSON数组包含一个或多个JSON对象，JSON对象的具体内容与 <a href="#json-icon">JSON 图标</a>相同。</li>
+</ul>
+<h3 id="json">JSON 图标<a id="json-icon"></a></h3>
+<ul>
+<li>
+<p>发送消息时，将<code>iconType</code>（int）设置为<code>9</code>，将<code>smallIcon</code>（JSON）设置为JSON对象，即可使用。</p>
+</li>
+<li>
+<p>JSON对象示例如下：</p>
+</li>
+</ul>
+<pre><code class="language-json">{
+    &quot;bitmap&quot;: &quot;iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAvpJREFUeF7tm9tNxDAQRe1OoBOoBLYSoBKgEugEOjF7pUSyInb9mnvHidY/fGCS7NkzY884xHAbVwnEGfmklB5CCL8xxl/v55sKUErpLoTwHkIAoLcY4+sN0EJgsQZwAGkd7pCmMGiB83XBFldI7oBSSgijl0IouUFyBZRSgjXINzXjFGP8qJloOccF0CYZt3yee/XKJgdUyDc1sKSQpIAq800JEvZGjyqTZIAa8800kOiABvLNFJCogAzyjTskGiABnBXedwgBWwBK3UYBZJSMS/bkv387lygfDEjmgIyTcRMkRnFrBoiYjFsgme+RTAAJ8801WOgf3bfQrJk7DMgh32w/F5IzillKnTYEyDHfABJWL4DBT9roAuScb2DKJxvMSrwXUKJ9ZdcvjBqMasz29r2AfjatUQUvaZE6ahD6xmh25f1jBSSEF/IOZdf83wfoMmi90LKCPYlBAQ5KC0moDQECqAunEQqbaOVF/vDDgCawido8MwN0VJtMAWU24QDwWRFn2T0obQ8KoCPZRAN0FJvogJxtOqFmG9k3SQAtkLCpxBHzrnKTDFAWcgAEUOpdeNfRtRxQZtP6HpBysWte6VwAbTaXpTc7rAE2Fb2ugBab5K2TeO7u11Kvnlh7wZZ5Dr3s5kLXG5DSHpybYdlvGm6AhM3+Zmso1XzL17L0tNGVZI8ua2YAxG7ZDlnjCkgQWsPWuAEih5aZNZ6AWt5qbclPpta4ACKFFsUaOSBSaKGN8diiWc9cyT6IcIYvO2GlAzIOLYk1shAzDi2ZNUpAFquW3BoJIKNK3cUaOiCD0HK1RgGo5n/ALq267tZQAQ2E1jTWsAH1VOpTWUMD1LHnmdIaCqCOxDytNSxAtaE1vTXmgBpCaxfWmAKqDK1dWWMNqFRO7M4aM0CF0NqtNSaACqG1a2usAP0XWs1vT/R0+ZR/09UwSynhHR+8vpKPw1gzbFA6J5/sIoezxgLQuik8pDXDgJQ5wPteXTnI+6GV978BKtC+ASoA+gM1yWtYaHIK6AAAAABJRU5ErkJggg==&quot;,
+    &quot;color&quot;: &quot;#ff1d93ec&quot;,
+    &quot;name&quot;: &quot;cuiliang.quicker&quot;,
+    &quot;contributor&quot;: &quot;wzn556&quot;
+}
+</code></pre>
+<ul>
+<li>该JSON对象具有<code>bitmap</code>、<code>color</code>、<code>name</code>、<code>contributor</code>四个键值对。</li>
+<li>消息图标主要由<code>bitmap</code>和<code>color</code>组成，<code>bitmap</code>为消息图标的图形（应为背景透明的纯白色图形，下图2处），<code>color</code>为消息图标的背景色（下图1处），<code>name</code>为图标名称（下图3处），<code>contributor</code>为贡献者名称。</li>
+</ul>
+<p><img alt="icon_view" src="assets/small_icons/json/icon_view.png" /></p>
+<ul>
+<li>
+<p>各键值对对应数据如下：</p>
+<ul>
+<li><code>bitmap</code>（string）：消息图标位图数据，为 png 格式图片（像素小于72×72，背景透明，图形纯白）转换所得的 Base64 字符串。可使用网站<a href="https://www.lddgo.net/convert/imagebasesix">图片转 Base64 (lddgo.net)</a>进行转换，需删掉前面的<code>data:image/png;base64,</code>部分。<blockquote>
+<p>厂商推送服务器对消息的大小有一定限制，位图过大时可能出现<code>Android message is too big</code>错误，建议使用像素为72×72（可以略小，但不要超过）的图片。</p>
+<p>图片细节过多时，即使将尺寸设置为72×72，也可能过大。可选择对图片进行压缩处理（损失一定清晰度）。或使用Illustrator进行处理（<strong>对象/图像描摹/建立</strong>，选择<strong>预设：低保真度照片</strong>，在不损失清晰度的情况下，消除部分细节，缩减位图大小）。</p>
+<p>在某些系统中（例如ColorOS），彩色<code>bitmap</code>能够以完整的色彩显示，如下图；但在（类）原生系统中，彩色<code>bitmap</code>会强制转化为白色。其他系统表现可能不同，可测试后反馈，在此补充。</p>
+<p><img alt="coloros" src="assets/small_icons/json/coloros.png" />
+</p>
+</blockquote>
+</li>
+<li>
+<p><code>color</code>（string）：消息图标的背景颜色，无需设置透明度（透明度不会生效）。</p>
+</li>
+<li>
+<p><code>name</code>（string）：消息图标的名称，建议使用应用包名作为名称（便于通知转发时使用），或使用<code>作者.作品</code>的形式（例如<code>cuiliang.quicker</code>）。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>使用时的消息 JSON 如下：</p>
+</li>
+</ul>
+<pre><code class="language-json">{
+    &quot;data&quot;: {
+        &quot;uuid&quot;: &quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;,
+        &quot;ttl&quot;: 86400,
+        &quot;priority&quot;: &quot;normal&quot;,
+        &quot;data&quot;: {
+            ...
+            &quot;iconType&quot;: 9,
+            &quot;smallIcon&quot;:{
+                &quot;bitmap&quot;: &quot;iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAvpJREFUeF7tm9tNxDAQRe1OoBOoBLYSoBKgEugEOjF7pUSyInb9mnvHidY/fGCS7NkzY884xHAbVwnEGfmklB5CCL8xxl/v55sKUErpLoTwHkIAoLcY4+sN0EJgsQZwAGkd7pCmMGiB83XBFldI7oBSSgijl0IouUFyBZRSgjXINzXjFGP8qJloOccF0CYZt3yee/XKJgdUyDc1sKSQpIAq800JEvZGjyqTZIAa8800kOiABvLNFJCogAzyjTskGiABnBXedwgBWwBK3UYBZJSMS/bkv387lygfDEjmgIyTcRMkRnFrBoiYjFsgme+RTAAJ8801WOgf3bfQrJk7DMgh32w/F5IzillKnTYEyDHfABJWL4DBT9roAuScb2DKJxvMSrwXUKJ9ZdcvjBqMasz29r2AfjatUQUvaZE6ahD6xmh25f1jBSSEF/IOZdf83wfoMmi90LKCPYlBAQ5KC0moDQECqAunEQqbaOVF/vDDgCawido8MwN0VJtMAWU24QDwWRFn2T0obQ8KoCPZRAN0FJvogJxtOqFmG9k3SQAtkLCpxBHzrnKTDFAWcgAEUOpdeNfRtRxQZtP6HpBysWte6VwAbTaXpTc7rAE2Fb2ugBab5K2TeO7u11Kvnlh7wZZ5Dr3s5kLXG5DSHpybYdlvGm6AhM3+Zmso1XzL17L0tNGVZI8ua2YAxG7ZDlnjCkgQWsPWuAEih5aZNZ6AWt5qbclPpta4ACKFFsUaOSBSaKGN8diiWc9cyT6IcIYvO2GlAzIOLYk1shAzDi2ZNUpAFquW3BoJIKNK3cUaOiCD0HK1RgGo5n/ALq267tZQAQ2E1jTWsAH1VOpTWUMD1LHnmdIaCqCOxDytNSxAtaE1vTXmgBpCaxfWmAKqDK1dWWMNqFRO7M4aM0CF0NqtNSaACqG1a2usAP0XWs1vT/R0+ZR/09UwSynhHR+8vpKPw1gzbFA6J5/sIoezxgLQuik8pDXDgJQ5wPteXTnI+6GV978BKtC+ASoA+gM1yWtYaHIK6AAAAABJRU5ErkJggg==&quot;,
+                &quot;color&quot;: &quot;#ff1d93ec&quot;,
+                &quot;name&quot;: &quot;cuiliang.quicker&quot;
+            },
+            ...
+        }
+    }
+}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.expand", "navigation.prune", "navigation.indexes"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

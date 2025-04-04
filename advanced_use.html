@@ -1,0 +1,692 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://notifyme.521933.xyz/advanced_use.html">
+      
+      
+        <link rel="prev" href="quick_use.html">
+      
+      
+        <link rel="next" href="usage_scenarios.html">
+      
+      
+      <link rel="icon" href="assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>进阶使用 - Notifyme Tutorials</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="." title="Notifyme Tutorials" class="md-header__button md-logo" aria-label="Notifyme Tutorials" data-md-component="logo">
+      
+  <img src="assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Notifyme Tutorials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              进阶使用
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="https://notifyme.521933.xyz" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://notifyme.521933.xyz" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Notifyme Tutorials" class="md-nav__button md-logo" aria-label="Notifyme Tutorials" data-md-component="logo">
+      
+  <img src="assets/logo.svg" alt="logo">
+
+    </a>
+    Notifyme Tutorials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="home.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quick_use.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    快速使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    进阶使用
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="advanced_use.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    进阶使用
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#post" class="md-nav__link">
+    <span class="md-ellipsis">
+      通过 POST 请求发送消息
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="通过 POST 请求发送消息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON数据说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="usage_scenarios.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    应用场景
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="set_small_icons.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    设置小图标
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="notification_click_action.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    通知点击动作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="other_push_type.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    其他推送类型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="question_and_answer.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    疑难解答
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#post" class="md-nav__link">
+    <span class="md-ellipsis">
+      通过 POST 请求发送消息
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="通过 POST 请求发送消息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON数据说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">进阶使用</h1>
+<h2 id="post">通过 POST 请求发送消息</h2>
+<ul>
+<li>
+<p>地址：<code>https://notifyme-server.521933.xyz</code></p>
+<blockquote>
+<ul>
+<li><code>https://notifyme-server.521933.xyz</code>不再支持<code>token</code>+<code>pushType</code>的发送形式，请使用<code>uuid</code>发送消息。</li>
+<li>
+<p>以下地址<strong>仍可使用</strong>，但<strong>不再更新</strong>功能，建议尽快更换至新网址。</p>
+<blockquote>
+<ul>
+<li>URL1：<code>https://send-notifyme.521933.xyz</code></li>
+<li>URL2：<code>https://send.notifyme-f7507.521933.xyz/</code></li>
+<li>URL3：<code>https://send1.notifyme-f7507.521933.xyz</code></li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>上述地址不支持的新功能包括：</p>
+<blockquote>
+<ul>
+<li>URL1 不支持 uuid 发送，通过 URL1 发送的OPPO 推送和魅族消息无法被 NotifyMe 记录（v4.3.1 及之前的版本仍可记录）；</li>
+<li>URL2、URL3 不支持 uuid 发送，且不支持除 FCM 以外的其他推送。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>请求头：<code>Content-Type:application/json</code></p>
+</li>
+<li>
+<p>JSON：</p>
+</li>
+</ul>
+<pre><code class="language-JSON">{
+    &quot;data&quot;: {
+        &quot;uuid&quot;: &quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;,
+        &quot;ttl&quot;: 86400,
+        &quot;priority&quot;: &quot;normal&quot;,
+        &quot;data&quot;: {
+            &quot;title&quot;: &quot;NotifyMe！&quot;,
+            &quot;body&quot;: &quot;This is a test message!&quot;,
+            &quot;group&quot;: &quot;Messages&quot;,
+            &quot;subgroup&quot;: &quot;10086&quot;,
+            &quot;bigText&quot;: false,
+            &quot;iconType&quot;: 0,
+            &quot;smallIcon&quot;:&quot;smallIcon_0&quot;,
+            &quot;largeIcon&quot;:&quot;largeIcon_0&quot;,
+            &quot;id&quot;:&quot;0&quot;,
+            &quot;encryption&quot;:false,
+            &quot;iv&quot;:&quot;UkAjUPykxX1Eu4h7&quot;,
+            &quot;invisible&quot;:false,
+            &quot;actionType&quot;:&quot;0&quot;,
+            &quot;action&quot;:&quot;&quot;,
+            &quot;channel&quot;:&quot;quicker_channel&quot;,
+            &quot;record&quot;:1
+        }
+    }
+}
+</code></pre>
+<h3 id="json">JSON数据说明</h3>
+<ul>
+<li><code>uuid</code>（string）：接收消息的设备 UUID。</li>
+<li><code>ttl</code>（int）：设备离线时，消息在厂商服务器存储的时间（以秒为单位）。不同推送类型支持的值不同：<blockquote>
+<ul>
+<li>FCM：0 ~ 2419200（4  周）。如果要立即发送消息，不在服务器上进行保存，请将其设置为 <code>0</code>。</li>
+<li>HMS 推送：0 ~ 1296000（15 天）。</li>
+<li>OPPO 推送：0 ~ 864000（10 天）。</li>
+<li>魅族推送：3600 ~ 259200（1 ~ 72 小时）。</li>
+</ul>
+</blockquote>
+</li>
+<li><code>priority</code>（string）：消息优先级。可以取<code>normal</code>和<code>high</code>：<blockquote>
+<ul>
+<li><code>normal</code>：应用在前台运行时，消息会被立即传递。当应用在后台运行时，消息传递可能会延迟。</li>
+<li><code>high</code>：即使设备处于低电耗模式（doze模式），FCM 也会立即尝试传递消息。</li>
+</ul>
+</blockquote>
+</li>
+<li><code>title</code>（string）：消息标题。</li>
+<li><code>body</code>（string）：消息内容。</li>
+<li><code>group</code>（string）：消息分组。状态栏及 app 内的消息分组。</li>
+<li><code>subgroup</code>（string）：消息二级分组。在<code>group</code>的基础上再次分组。</li>
+<li><code>bigText</code>（string）：消息是否为大文本（即<code>body</code>在通知栏是否显示多行）。适合消息内容较多，且用户需在状态栏查看所有通知内容的场景。建议在短信转发时设置为<code>true</code>。</li>
+<li><code>iconType</code>（int）与<code>smallIcon</code>（string or JSON）：消息小图标，具体见<a href="/set_small_icons">设置小图标</a>。</li>
+<li><code>largeIcon</code>（string）：设置用户自定义的大图标。取值为用户创建大图标时设定的名称。未设置或值不存在时通知无大图标。</li>
+<li><code>id</code>（string）：通知的id，新通知会在状态栏覆盖相同的<code>id</code>的旧通知。取值为任意字符串，如<code>今日新闻</code>。取值为<code>0</code>表示App自动设置通知<code>id</code>，此时任何通知都不会被覆盖。</li>
+<li><code>encryption</code>（bool）：是否进行加密。使用时将要发送的<code>title</code>和<code>body</code>替换成加密后的字符串，加密方法为<code>AES/CBC/PKCS5Padding</code>。请使用填入的初始化向量<code>iv</code>和 <strong>App/设置</strong> 中的<code>AesKey</code>进行加密。</li>
+<li><code>iv</code>（string）：AES加密的初始化向量。长度为<code>16</code>字节，用于App解密数据。建议随机生成，以使每条消息使用不同的<code>iv</code>。</li>
+<li><code>invisible</code>（bool）：通知是否可见。设置为<code>true</code>时，将不会在通知中显示<code>title</code>和<code>body</code>的具体内容（仅在 app 内可见）。</li>
+<li><code>actionType</code>（int）与<code>action</code>（string or JSON）：通知点击动作。具体见<a href="/notification_click_action">通知点击动作</a>。</li>
+<li><code>channel</code>（string）：通知通道。用于自定义通知铃声、振动等。取值为用户在 app 内自定义的通道名称。未设置或取值不存在时，将使用默认通道。</li>
+<li><code>record</code>（float）：是否记录记录消息，默认为<code>1</code>。<blockquote>
+<ul>
+<li>设置为<code>0</code>时，app 将不会记录该条消息。设置为<code>负值</code>时，消息将在 app 内保存该天数后删除，例如<code>-1</code>表示，消息将在 1 天后删除，起算时间为消息发送时间。 </li>
+<li>若有0.1的小数位（如<code>1.1</code>、<code>-1.1</code>），则表示消息在 app 内默认为已读，小数位不会影响保存天数的计算，例如<code>-1.1</code>仍表示1天后删除。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h2 id="_2">其他</h2>
+<p>具体使用见以下<a href="/usage_scenarios">应用场景</a>。</p>
+<ol>
+<li><a href="/usage_scenarios/#smsforwarder">短信转发器</a></li>
+<li><a href="/usage_scenarios/#qinglong">青龙</a></li>
+<li><a href="/usage_scenarios/#quicker">Quicker</a></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.expand", "navigation.prune", "navigation.indexes"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
