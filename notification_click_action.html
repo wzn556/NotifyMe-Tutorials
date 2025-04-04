@@ -88,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="Notifyme Tutorials" class="md-header__button md-logo" aria-label="Notifyme Tutorials" data-md-component="logo">
+    <a href="index.html" title="Notifyme Tutorials" class="md-header__button md-logo" aria-label="Notifyme Tutorials" data-md-component="logo">
       
   <img src="assets/logo.svg" alt="logo">
 
@@ -171,6 +171,43 @@
 </div>
     
     
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     
   </nav>
   
@@ -197,7 +234,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Notifyme Tutorials" class="md-nav__button md-logo" aria-label="Notifyme Tutorials" data-md-component="logo">
+    <a href="index.html" title="Notifyme Tutorials" class="md-nav__button md-logo" aria-label="Notifyme Tutorials" data-md-component="logo">
       
   <img src="assets/logo.svg" alt="logo">
 
@@ -214,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="home.md" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -765,70 +802,70 @@
 <li>不设置<code>actionType</code>或设置为不属于<code>0~3</code>的任意值，也会打开 Notifyme。</li>
 </ul>
 <h3 id="_3">示例</h3>
-<pre><code class="language-json">{
-    &quot;data&quot;: {
-        &quot;uuid&quot;: &quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;,
-        &quot;ttl&quot;: 86400,
-        &quot;priority&quot;: &quot;normal&quot;,
-        &quot;data&quot;: {
-            ...
-            &quot;actionType&quot;:&quot;0&quot;,
-            ...
-        }
-    }
-}
-</code></pre>
+<div class="language-json highlight"><pre><span></span><code><span id="__LINE__-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__LINE__-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">86400</span><span class="p">,</span>
+</span><span id="__LINE__-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;normal&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="err">...</span>
+</span><span id="__LINE__-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;0&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">            </span><span class="err">...</span>
+</span><span id="__LINE__-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__LINE__-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__LINE__-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="uri">URI启动<a id="start-uri"></a></h2>
 <ul>
 <li>当<code>actionType</code>（int）为<code>1</code>，<code>action</code>（string）设置为具体 URI 时，点击通知将打开此 URI。以 URI 为<code>https://www.baidu.com</code>为例，点击通知将打开网址 <a href="https://www.baidu.com">https://www.baidu.com</a> 。</li>
 </ul>
 <h3 id="_4">示例</h3>
-<pre><code class="language-json">{
-  &quot;data&quot;: {
-      &quot;uuid&quot;: &quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;,
-      &quot;ttl&quot;: 86400,
-      &quot;priority&quot;: &quot;normal&quot;,
-      &quot;data&quot;: {
-          ...
-          &quot;actionType&quot;:&quot;1&quot;,
-          &quot;action&quot;:&quot;https://www.baidu.com&quot;,
-          ...
-      }
-  }
-}
-</code></pre>
+<div class="language-json highlight"><pre><span></span><code><span id="__LINE__-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__LINE__-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">      </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">86400</span><span class="p">,</span>
+</span><span id="__LINE__-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;normal&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">      </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">          </span><span class="err">...</span>
+</span><span id="__LINE__-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">          </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">          </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.baidu.com&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">          </span><span class="err">...</span>
+</span><span id="__LINE__-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__LINE__-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__LINE__-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="_5">包名启动<a id="start-packagename"></a></h2>
 <ul>
 <li>当<code>actionType</code>（int）为<code>2</code>，<code>action</code>（string）设置为应用包名时，点击通知将根据包名打开应用。以包名<code>com.tencent.mobileqq</code>为例，点击通知将打开 QQ。</li>
 </ul>
 <h3 id="_6">示例</h3>
-<pre><code class="language-json">{
-    &quot;data&quot;: {
-        &quot;uuid&quot;: &quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;,
-        &quot;ttl&quot;: 86400,
-        &quot;priority&quot;: &quot;normal&quot;,
-        &quot;data&quot;: {
-            ...
-            &quot;actionType&quot;:&quot;2&quot;,
-            &quot;action&quot;:&quot;com.tencent.mobileqq&quot;,
-            ...
-        }
-    }
-}
-</code></pre>
+<div class="language-json highlight"><pre><span></span><code><span id="__LINE__-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+</span><span id="__LINE__-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">86400</span><span class="p">,</span>
+</span><span id="__LINE__-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;normal&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">            </span><span class="err">...</span>
+</span><span id="__LINE__-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;2&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="s2">&quot;com.tencent.mobileqq&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">            </span><span class="err">...</span>
+</span><span id="__LINE__-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__LINE__-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__LINE__-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="activity">Activity 启动<a id="start-activity"></a></h2>
 <ul>
 <li>当<code>actionType</code>（int）为<code>3</code>时，<code>action</code>（string）可设置为如下 JSON 数据格式，点击通知将启动该 Acitivity 并向其传递数据。</li>
 </ul>
-<pre><code class="language-json">{
-    &quot;packageName&quot;: &quot;com.google.android.gms&quot;,
-    &quot;className&quot;: &quot;com.google.android.gms.gcm.GcmDiagnostics&quot;,
-    &quot;extras&quot;: {
-        &quot;key1&quot;:&quot;value1&quot;,
-        &quot;key2&quot;:&quot;value2&quot;
-    }
-}
-</code></pre>
+<div class="language-json highlight"><pre><span></span><code><span id="__LINE__-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+</span><span id="__LINE__-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nt">&quot;packageName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;com.google.android.gms&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">&quot;className&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;com.google.android.gms.gcm.GcmDiagnostics&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nt">&quot;extras&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="nt">&quot;key1&quot;</span><span class="p">:</span><span class="s2">&quot;value1&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="nt">&quot;key2&quot;</span><span class="p">:</span><span class="s2">&quot;value2&quot;</span>
+</span><span id="__LINE__-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__LINE__-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">}</span>
+</span></code></pre></div>
 <h3 id="json">JSON 数据说明</h3>
 <ul>
 <li><code>packageName</code>：应用包名，例如<code>com.google.android.gms</code>；</li>
@@ -839,40 +876,40 @@
 <ul>
 <li>以包名为<code>com.google.android.gms</code>，Activity为<code>com.google.android.gms.gcm.GcmDiagnostics</code>为例，点击通知将打开Google Play服务的FCM Diagnostics。</li>
 </ul>
-<pre><code class="language-json">{
-    &quot;data&quot;: {
-        &quot;uuid&quot;: &quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;,
-        &quot;ttl&quot;: 86400,
-        &quot;priority&quot;: &quot;normal&quot;,
-        &quot;data&quot;: {
-            ...
-            &quot;actionType&quot;:&quot;2&quot;,
-            &quot;action&quot;:{
-                &quot;packageName&quot;: &quot;com.google.android.gms&quot;,
-                &quot;className&quot;: &quot;com.google.android.gms.gcm.GcmDiagnostics&quot;,
-                &quot;extras&quot;: {}
-            },
-            ...
-        }
-    }
-}
-</code></pre>
+<div class="language-json highlight"><pre><span></span><code><span id="__LINE__-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
+</span><span id="__LINE__-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">        </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">86400</span><span class="p">,</span>
+</span><span id="__LINE__-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;normal&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">        </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">            </span><span class="err">...</span>
+</span><span id="__LINE__-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;2&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:{</span>
+</span><span id="__LINE__-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">                </span><span class="nt">&quot;packageName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;com.google.android.gms&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">                </span><span class="nt">&quot;className&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;com.google.android.gms.gcm.GcmDiagnostics&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">                </span><span class="nt">&quot;extras&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+</span><span id="__LINE__-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">            </span><span class="p">},</span>
+</span><span id="__LINE__-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">            </span><span class="err">...</span>
+</span><span id="__LINE__-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__LINE__-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__LINE__-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="_8">写入剪贴板<a id="write-clipboard"></a></h2>
 <p>当<code>actionType</code>（int）为<code>4</code>时，设备收到通知时会将通知内容（即<code>body</code>）写入剪贴板，OPPO推送、魅族推送需手动复制。</p>
 <h3 id="_9">示例</h3>
-<pre><code class="language-json">{
-    &quot;data&quot;: {
-        &quot;uuid&quot;: &quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;,
-        &quot;ttl&quot;: 86400,
-        &quot;priority&quot;: &quot;normal&quot;,
-        &quot;data&quot;: {
-            ...
-            &quot;actionType&quot;:&quot;4&quot;,
-            ...
-        }
-    }
-}
-</code></pre>
+<div class="language-json highlight"><pre><span></span><code><span id="__LINE__-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
+</span><span id="__LINE__-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">        </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">        </span><span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">86400</span><span class="p">,</span>
+</span><span id="__LINE__-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;normal&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">        </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">            </span><span class="err">...</span>
+</span><span id="__LINE__-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;4&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">            </span><span class="err">...</span>
+</span><span id="__LINE__-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__LINE__-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__LINE__-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="p">}</span>
+</span></code></pre></div>
 
 
 
@@ -890,6 +927,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -918,10 +957,8 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.expand", "navigation.prune", "navigation.indexes"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "navigation.expand", "navigation.prune", "navigation.indexes", "content.tabs.link", "content.code.copy", "content.code.annotate", "content.code.tabs", "content.code.linenums"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
