@@ -701,14 +701,15 @@
 <h3 id="_4">接收端设置</h3>
 <p>根据推送类型及设备类型具体设置。</p>
 <h4 id="fcm">FCM（谷歌）</h4>
-<p>授予NotifyMe“自启动权限”。</p>
+<p>授予 NotifyMe “自启动权限”。</p>
 <h5 id="colorosrealmeui">ColorOS/realmeUI</h5>
+<p>ColorOS 系从 Android14（版本号 700）开始对国行设备的 Google 服务框架运行做了限制，要保证消息的送达，可采用以下方法：</p>
 <ul>
 <li>
 <p>下载<a href="https://raw.githubusercontent.com/wzn556/NotifyMe-Tutorials/refs/heads/main/ColorOS/%E7%94%B5%E6%B1%A0_1.2.5.apk">电池APP(1.2.5)</a>;</p>
 </li>
 <li>
-<p>清除电池APP数据，<code>手机设置/应用/应用管理/电池/存储占用/清除数据</code>；</p>
+<p>清除电池APP数据，<strong>手机设置/应用/应用管理/电池/存储占用/清除数据</strong>；</p>
 </li>
 <li>
 <p>安装下载的电池APP；</p>
@@ -719,42 +720,38 @@
 </ul>
 <blockquote>
 <p>安装前后都需要清除数据。</p>
-<p>若此处提供的电池APP版本过低，可下载设备当前系统版本对应的氧OS，提取其中的电池APP，按此方法操作。
+<p>若此处提供的电池 APP 版本过低无法安装，可下载当前系统版本对应的氧 OS（机型无需相同），提取其中的电池 APP，按此方法操作。
 </p>
 </blockquote>
 <h5 id="_5">国行三星</h5>
-<p>国行三星在网络无法访问Google时，会禁用FCM，防止一直重连导致耗电。解决方法包括：</p>
+<p>国行三星在网络无法访问 Google 时，会禁用 FCM，防止一直重连导致耗电。解决方法包括：</p>
 <ul>
 <li>刷港版系统；</li>
-<li>安装HMS core，切换推送类型为 <strong>HMS（华为）</strong>。</li>
+<li>安装 HMS core，切换推送类型为 <strong>HMS（华为）</strong>。</li>
 </ul>
 <p>若有其他解决方案，欢迎反馈。</p>
 <h4 id="hms">HMS（华为）</h4>
+<p>非华为/荣耀设备使用 HMS 推送时，需要保证 HMS core 在后台正常运行，且 HMS core 能够唤醒 NotifyMe，才能保证消息送达率。具体措施（任选其一即可）包括：</p>
 <ul>
-<li>非华为/荣耀设备使用HMS推送时，需要保证HMS core在后台正常运行，且HMS core能够唤醒NotifyMe，才能保证消息送达率。具体措施（任选其一即可）包括：</li>
-<li>尽可能授予HMS core权限，包括但不限于：自启动权限、允许应用后台行为、关联启动权限。</li>
-<li>将HMS core转化为系统应用（需root）。同样需授予上述权限。在转化为系统应用后，部分系统可能无法再设置权限，因此建议授予权限后再转化为系统应用。转化为系统应用后运行会更加稳定。</li>
-<li>使用HMS Push保活（需 xposed 或 lsposed 框架）。</li>
-</ul>
-<blockquote>
+<li>尽可能授予 HMS core 权限，包括但不限于：自启动权限、允许应用后台行为、关联启动权限。</li>
+<li>将 HMS core 转化为系统应用（需 root）。同样需授予上述权限。在转化为系统应用后，部分系统可能无法再设置权限，因此建议授予权限后再转化为系统应用。转化为系统应用后运行会更加稳定。</li>
+<li>使用 HMS Push 保活（需 xposed 或 lsposed 框架）。<blockquote>
 <p>在非华为/荣耀设备上，NotifyMe并不依赖HMS Push，但若使用HMS Push修补了HMS core，则同样需修补NotifyMe，否则签名校验不通过，会导致HMS推送无法使用。</p>
 </blockquote>
+</li>
+</ul>
 <h2 id="_6">是否有用量限制</h2>
 <ul>
 <li>
 <p>由于各大厂商推送服务本身设有 QPS，为了保障所有用户的正常使用，NotifyMe服务器（<code>https://notifyme-server.521933.xyz</code>）对用户请求进行了一定限制。</p>
-</li>
-<li>
+<blockquote>
 <p>分 ip 限制和 uuid 限制。ip限制为每个 ip <code>40条/2秒</code>；uuid 限制为每个 uuid <code>10条/秒</code>（可短暂突破限制，峰值<code>50条/秒</code>）。</p>
-</li>
-<li>
 <p>当前用量仅为试运行，后续会根据余量情况酌情调整。</p>
-</li>
-<li>
 <p>触发限制时，返回状态码为<code>427</code>，result值为<code>too many request from this ip address</code>或<code>too many requests from this UUID</code>。</p>
+</blockquote>
 </li>
 <li>
-<p>url1、url2、url3（具体见进阶使用）并无限制。但也请按需使用，不要过分刷接口。若发现无意义的刷接口行为，导致使用超限，影响其他用户的正常使用，会考虑关闭上述无限制的服务器。且用且珍惜！</p>
+<p>URL1、URL2、URL3（具体见进阶使用）并无限制。但也请按需使用。若发现无意义的刷接口行为，导致使用超限，影响其他用户的正常使用，会考虑关闭上述无限制的服务器。且用且珍惜！</p>
 </li>
 <li>
 <p>使用短信转发器时，如果要在同一个设备上发送、接收进行测试，请在创建发送通道时，将 NotifyMe（包名：<code>com.wzn556.notifyme</code>）排除在外，避免循环转发。</p>
