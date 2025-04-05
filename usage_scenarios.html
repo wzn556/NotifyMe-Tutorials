@@ -660,6 +660,9 @@
 </li>
 <li>
 <p>将下文消息模板（根据<a href="#sms-forwarder">短信转发</a>或<a href="#notification-forwarder">应用通知转发</a>选择具体消息模板）中<code>uuid</code>的值，替换为 <strong>NotifyMe-设置/分享UUID</strong> 中复制的UUID。</p>
+<blockquote>
+<p>如果要在同一个设备上发送、接收进行测试，请在创建发送通道时，将 NotifyMe（包名：<code>com.wzn556.notifyme</code>）排除在外，避免循环转发。</p>
+</blockquote>
 </li>
 <li>
 <p>消息模板中各项的定义及设置小图标、通知点击动作等参见<a href="/advanced_use">进阶使用</a>。</p>
