@@ -499,6 +499,30 @@
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
+      极光推送
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="极光推送">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
       其他推送
     </span>
   </a>
@@ -656,6 +680,30 @@
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
+      极光推送
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="极光推送">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      示例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
       其他推送
     </span>
   </a>
@@ -787,7 +835,47 @@
 </span><span id="__LINE__-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__LINE__-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="_7">其他推送</h2>
+<h2 id="_7">极光推送</h2>
+<ul>
+<li>极光推送支持所有的键值对，具体如下示例。</li>
+<li>极光推送分系统级推送通道和应用级推送通道两个部分。在华硕和三星等设备上，极光推送可以通过系统级推送通道进行推送，在其他设备上，极光推送只能通过应用级推送通道推送（需常驻后台）。</li>
+</ul>
+<blockquote>
+<p>国行三星系统推送集成了极光推送服务，其他版本未知，非国行设备建议使用 FCM。</p>
+<p>第三方 ROM 需进行设置，以保证应用在后台的存活率。具体见：<a href="https://dontkillmyapp.com">Don't kill my app</a>（推荐）或 <a href="https://docs.jiguang.cn/jpush/client/Android/android_faq#第三方系统收不到推送的消息">SDK FAQ - 极光文档</a>（已较长时间未更新）。</p>
+<p>建议开启读取应用列表权限和关联启动权限，用于与其他使用极光推送的 app 合并长连接，节省电量与流量。</p>
+</blockquote>
+<ul>
+<li>每个键值对的具体含义见<a href="/advanced_use">进阶使用</a>。</li>
+</ul>
+<h3 id="_8">示例</h3>
+<div class="language-json highlight"><pre><span></span><code><span id="__LINE__-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+</span><span id="__LINE__-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">        </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CWYMVYWQHoPGXEkh9yP5Nd&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="nt">&quot;ttl&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">86400</span><span class="p">,</span>
+</span><span id="__LINE__-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;normal&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">        </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__LINE__-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">            </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NotifyMe！&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">            </span><span class="nt">&quot;body&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;This is a test message!&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">            </span><span class="nt">&quot;group&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Messages&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">            </span><span class="nt">&quot;subgroup&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10086&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">            </span><span class="nt">&quot;bigText&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__LINE__-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">            </span><span class="nt">&quot;iconType&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__LINE__-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">            </span><span class="nt">&quot;smallIcon&quot;</span><span class="p">:</span><span class="s2">&quot;smallIcon_0&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">            </span><span class="nt">&quot;largeIcon&quot;</span><span class="p">:</span><span class="s2">&quot;largeIcon_0&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">            </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;0&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">            </span><span class="nt">&quot;encryption&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__LINE__-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">            </span><span class="nt">&quot;iv&quot;</span><span class="p">:</span><span class="s2">&quot;UkAjUPykxX1Eu4h7&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">            </span><span class="nt">&quot;invisible&quot;</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__LINE__-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;0&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">            </span><span class="nt">&quot;channel&quot;</span><span class="p">:</span><span class="s2">&quot;quicker_channel&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">            </span><span class="nt">&quot;record&quot;</span><span class="p">:</span><span class="mi">1</span>
+</span><span id="__LINE__-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__LINE__-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__LINE__-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="_9">其他推送</h2>
 <ul>
 <li>如果您有国内企业开发者账号（或有资格申请企业开发者账号），且有意愿帮助完善NotifyMe，支持其他系统级推送（包括但不限于小米推送、VIVO 推送、荣耀推送，OPPO 推送国内部分等），可与开发者联系。联系方式：<ul>
 <li>QQ：2263199778</li>
