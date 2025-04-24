@@ -365,6 +365,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="极光推送">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      三星
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三星">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oneui60" class="md-nav__link">
+    <span class="md-ellipsis">
+      OneUI6.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oneui50" class="md-nav__link">
+    <span class="md-ellipsis">
+      OneUI5.0
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -378,7 +417,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       是否有用量限制
     </span>
@@ -387,7 +426,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       是否支持自建服务器
     </span>
@@ -461,9 +500,20 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="_6">极光推送</h4>
-<p>第三方 ROM 需进行进行设置，以保证应用在后台的存活率。具体见：<a href="https://dontkillmyapp.com">Don't kill my app</a>（推荐）或 <a href="https://docs.jiguang.cn/jpush/client/Android/android_faq#第三方系统收不到推送的消息">SDK FAQ - 极光文档</a>（已较长时间未更新）。</p>
-<h2 id="_7">是否有用量限制</h2>
+<h4 id="_6">极光推送<a id="jpush-settings"></a></h4>
+<p>第三方 ROM 需进行进行设置，以保证应用在后台的存活率。具体见：下文（三星）、<a href="https://dontkillmyapp.com">Don't kill my app</a>（推荐）或 <a href="https://docs.jiguang.cn/jpush/client/Android/android_faq#第三方系统收不到推送的消息">SDK FAQ - 极光文档</a>（已较长时间未更新）。</p>
+<h5 id="_7">三星</h5>
+<h6 id="oneui60">OneUI6.0</h6>
+<ul>
+<li><strong>智能管理器/实用工具/应用程序管理/NotifyMe/后台运行</strong> 设置为不受限制。</li>
+<li><strong>智能管理器/手机状态/内存/已排除的应用程序</strong> 添加 NotifyMe。</li>
+</ul>
+<h6 id="oneui50">OneUI5.0</h6>
+<ul>
+<li><strong>智能管理器/实用工具/应用程序管理/NotifyMe/自动运行</strong> 设置允许。</li>
+<li><strong>智能管理器/手机状态/内存/已排除的应用程序</strong> 添加 NotifyMe。</li>
+</ul>
+<h2 id="_8">是否有用量限制</h2>
 <ul>
 <li>
 <p>由于各大厂商推送服务本身设有 QPS，为了保障所有用户的正常使用，NotifyMe服务器（<code>https://notifyme-server.521933.xyz</code>）对用户请求进行了一定限制。</p>
@@ -477,10 +527,10 @@
 <p>URL1、URL2、URL3（具体见进阶使用）并无限制。但也请按需使用。若发现无意义的刷接口行为，导致使用超限，影响其他用户的正常使用，会考虑关闭上述无限制的服务器。且用且珍惜！</p>
 </li>
 </ul>
-<h2 id="_8">是否支持自建服务器</h2>
+<h2 id="_9">是否支持自建服务器</h2>
 <p>暂不支持。</p>
 <ul>
-<li>如果有安全忧虑，可禁用 NotifyMe 的联网权限（消息接收由系统组件控制，不会受影响），在断网状态下刷新 Aes Key，使用 Aes Key 对消息标题和内容进行加密后发送（具体见<a href="/advanced_use">进阶使用</a>）。<blockquote>
+<li>如果有安全忧虑，可禁用 NotifyMe 的联网权限（消息接收由系统组件控制，不会受影响），在断网状态下刷新 Aes Key，使用 Aes Key 对消息标题和内容进行加密后发送（具体见<a href="advanced_use.html">进阶使用</a>）。<blockquote>
 <p>NotifyMe 不会上传用户的任何信息。对网络的使用仅包括：</p>
 <ul>
 <li>UUID 的注册及更新；</li>

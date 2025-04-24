@@ -565,6 +565,27 @@
   
   
     <li class="md-nav__item">
+      <a href="acknowledgements.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    致谢
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="privacy_policy.html" class="md-nav__link">
         
   
@@ -736,7 +757,7 @@
 <p>无需使用HMS Push模块。但如果使用HMS Push对HMS Core进行了优化（HMS Core签名被改变），则必须对NotifyMe也进行优化。</p>
 </blockquote>
 </li>
-<li>每个键值对的具体含义见<a href="/advanced_use">进阶使用</a>。</li>
+<li>每个键值对的具体含义见<a href="advanced_use.html">进阶使用</a>。</li>
 </ul>
 <h3 id="_3">示例</h3>
 <div class="language-json highlight"><pre><span></span><code><span id="__LINE__-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
@@ -771,7 +792,7 @@
 <p>OPPO 推送仅支持有限的键值对，具体如下示例。</p>
 </li>
 <li>
-<p>每个键值对的具体含义见<a href="/advanced_use">进阶使用</a>。</p>
+<p>每个键值对的具体含义见<a href="advanced_use.html">进阶使用</a>。</p>
 </li>
 <li>
 <p>由于 OPPO 推送服务自身的限制，若应用在运行过程中收到消息，需在消息界面手动刷新消息（在 app 启动时会自动同步一次消息）。</p>
@@ -816,7 +837,7 @@
 <h2 id="_5">魅族推送</h2>
 <ul>
 <li>魅族推送仅支持有限的键值对，具体如下示例。</li>
-<li>每个键值对的具体含义见<a href="/advanced_use">进阶使用</a>。</li>
+<li>每个键值对的具体含义见<a href="advanced_use.html">进阶使用</a>。</li>
 <li>由于魅族推送自身限制，<code>group</code>键值对目前仅支持应用内分类（<code>App/消息</code>界面），无法在通知栏中反映。</li>
 </ul>
 <h3 id="_6">示例</h3>
@@ -838,15 +859,17 @@
 <h2 id="_7">极光推送</h2>
 <ul>
 <li>极光推送支持所有的键值对，具体如下示例。</li>
-<li>极光推送分系统级推送通道和应用级推送通道两个部分。在华硕和三星等设备上，极光推送可以通过系统级推送通道进行推送，在其他设备上，极光推送只能通过应用级推送通道推送（需常驻后台）。</li>
-</ul>
+<li>
+<p>极光推送分系统级推送通道和应用级推送通道两个部分。在华硕上，极光推送可以通过系统级推送通道进行推送，在其他设备上，极光推送只能通过应用级推送通道推送（需常驻后台）。</p>
 <blockquote>
-<p>国行三星系统推送集成了极光推送服务，其他版本未知，非国行设备建议使用 FCM。</p>
-<p>第三方 ROM 需进行设置，以保证应用在后台的存活率。具体见：<a href="https://dontkillmyapp.com">Don't kill my app</a>（推荐）或 <a href="https://docs.jiguang.cn/jpush/client/Android/android_faq#第三方系统收不到推送的消息">SDK FAQ - 极光文档</a>（已较长时间未更新）。</p>
+<p>第三方 ROM 需进行设置，以保证应用在后台的存活率。具体见：<a href="question_and_answer.html#jpush-settings">疑难解答/消息延迟或无法收到消息/接收端设置/极光推送</a>。</p>
 <p>建议开启读取应用列表权限和关联启动权限，用于与其他使用极光推送的 app 合并长连接，节省电量与流量。</p>
+<p>国行三星的服务提醒集成了极光推送服务，理论上可以与 NotifyMe 合并长连接，具体是否可行请自行测试。</p>
 </blockquote>
-<ul>
-<li>每个键值对的具体含义见<a href="/advanced_use">进阶使用</a>。</li>
+</li>
+<li>
+<p>每个键值对的具体含义见<a href="advanced_use.html">进阶使用</a>。</p>
+</li>
 </ul>
 <h3 id="_8">示例</h3>
 <div class="language-json highlight"><pre><span></span><code><span id="__LINE__-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>

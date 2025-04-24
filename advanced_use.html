@@ -493,6 +493,27 @@
   
   
     <li class="md-nav__item">
+      <a href="acknowledgements.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    致谢
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="privacy_policy.html" class="md-nav__link">
         
   
@@ -670,13 +691,13 @@
 <li><code>group</code>（string）：消息分组。状态栏及 app 内的消息分组。</li>
 <li><code>subgroup</code>（string）：消息二级分组。在<code>group</code>的基础上再次分组。</li>
 <li><code>bigText</code>（string）：消息是否为大文本（即<code>body</code>在通知栏是否显示多行）。适合消息内容较多，且用户需在状态栏查看所有通知内容的场景。建议在短信转发时设置为<code>true</code>。</li>
-<li><code>iconType</code>（int）与<code>smallIcon</code>（string or JSON）：消息小图标，具体见<a href="/set_small_icons">设置小图标</a>。</li>
+<li><code>iconType</code>（int）与<code>smallIcon</code>（string or JSON）：消息小图标，具体见<a href="set_small_icons.html">设置小图标</a>。</li>
 <li><code>largeIcon</code>（string）：设置用户自定义的大图标。取值为用户创建大图标时设定的名称。未设置或值不存在时通知无大图标。</li>
 <li><code>id</code>（string）：通知的id，新通知会在状态栏覆盖相同的<code>id</code>的旧通知。取值为任意字符串，如<code>今日新闻</code>。取值为<code>0</code>表示App自动设置通知<code>id</code>，此时任何通知都不会被覆盖。</li>
 <li><code>encryption</code>（bool）：是否进行加密。使用时将要发送的<code>title</code>和<code>body</code>替换成加密后的字符串，加密方法为<code>AES/CBC/PKCS5Padding</code>。请使用填入的初始化向量<code>iv</code>和 <strong>App/设置</strong> 中的<code>AesKey</code>进行加密。</li>
 <li><code>iv</code>（string）：AES加密的初始化向量。长度为<code>16</code>字节，用于App解密数据。建议随机生成，以使每条消息使用不同的<code>iv</code>。</li>
 <li><code>invisible</code>（bool）：通知是否可见。设置为<code>true</code>时，将不会在通知中显示<code>title</code>和<code>body</code>的具体内容（仅在 app 内可见）。</li>
-<li><code>actionType</code>（int）与<code>action</code>（string or JSON）：通知点击动作。具体见<a href="/notification_click_action">通知点击动作</a>。</li>
+<li><code>actionType</code>（int）与<code>action</code>（string or JSON）：通知点击动作。具体见<a href="notification_click_action.html">通知点击动作</a>。</li>
 <li><code>channel</code>（string）：通知通道。用于自定义通知铃声、振动等。取值为用户在 app 内自定义的通道名称。未设置或取值不存在时，将使用默认通道。</li>
 <li><code>record</code>（float）：是否记录记录消息，默认为<code>1</code>。<blockquote>
 <ul>
@@ -687,11 +708,11 @@
 </li>
 </ul>
 <h2 id="_2">其他</h2>
-<p>具体使用见以下<a href="/usage_scenarios">应用场景</a>。</p>
+<p>具体使用见以下<a href="usage_scenarios.html">应用场景</a>。</p>
 <ol>
-<li><a href="/usage_scenarios/#smsforwarder">短信转发器</a></li>
-<li><a href="/usage_scenarios/#qinglong">青龙</a></li>
-<li><a href="/usage_scenarios/#quicker">Quicker</a></li>
+<li><a href="usage_scenarios.html#smsforwarder">短信转发器</a></li>
+<li><a href="usage_scenarios.html#qinglong">青龙</a></li>
+<li><a href="usage_scenarios.html#quicker">Quicker</a></li>
 </ol>
 
 
