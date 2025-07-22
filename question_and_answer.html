@@ -14,7 +14,7 @@
         <link rel="prev" href="other_push_type.html">
       
       
-        <link rel="next" href="acknowledgements.html">
+        <link rel="next" href="change_log.html">
       
       
       <link rel="icon" href="assets/favicon.svg">
@@ -377,6 +377,27 @@
   
   
     <li class="md-nav__item">
+      <a href="notification_button.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    通知按钮
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="other_push_type.html" class="md-nav__link">
         
   
@@ -596,6 +617,27 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="change_log.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    更新日志
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -877,7 +919,7 @@
 <li>尽可能授予 HMS core 权限，包括但不限于：自启动权限、允许应用后台行为、关联启动权限。</li>
 <li>将 HMS core 转化为系统应用（需 root）。同样需授予上述权限。在转化为系统应用后，部分系统可能无法再设置权限，因此建议授予权限后再转化为系统应用。转化为系统应用后运行会更加稳定。</li>
 <li>使用 HMS Push 保活（需 xposed 或 lsposed 框架）。<blockquote>
-<p>在非华为/荣耀设备上，NotifyMe并不依赖HMS Push，但若使用HMS Push修补了HMS core，则同样需修补NotifyMe，否则签名校验不通过，会导致HMS推送无法使用。</p>
+<p>在非华为/荣耀设备上，NotifyMe 并不依赖 HMS Push，但若使用 HMS Push 修补了 HMS core，则同样需修补 NotifyMe，否则签名校验不通过，会导致 HMS 推送无法使用。</p>
 </blockquote>
 </li>
 </ul>
@@ -899,7 +941,7 @@
 <li>
 <p>由于各大厂商推送服务本身设有 QPS，为了保障所有用户的正常使用，NotifyMe服务器（<code>https://notifyme-server.521933.xyz</code>）对用户请求进行了一定限制。</p>
 <blockquote>
-<p>分 ip 限制和 uuid 限制。ip限制为每个 ip <code>40条/2秒</code>；uuid 限制为每个 uuid <code>10条/秒</code>（可短暂突破限制，峰值<code>50条/秒</code>）。</p>
+<p>分 ip 限制和 uuid 限制。ip 限制为每个 ip <code>40条/2秒</code>；uuid 限制为每个 uuid <code>10条/秒</code>（可短暂突破限制，峰值<code>50条/秒</code>）。</p>
 <p>当前用量仅为试运行，后续会根据余量情况酌情调整。</p>
 <p>触发限制时，返回状态码为<code>427</code>，result值为<code>too many request from this ip address</code>或<code>too many requests from this UUID</code>。</p>
 </blockquote>
@@ -919,8 +961,8 @@
 <li>使用 URL 批量导入小图标；</li>
 <li>使用网络小图标时缓存图片文件。</li>
 </ul>
-<p>如果要长期禁用 NotifyMe 的联网权限，建议不要使用UUID发送消息（UUID 超过60天未同步会从 NotifyMe 服务器删除，以节省资源。建议使用<code>token</code>+<code>pushType</code>的方式发送），以免 UUID 失效后影响正常使用。</p>
-<p>NotifyMe 服务器不会存储用户的消息。（OPPO推送和魅族推送由于不支持透传消息，如果用户选择了在app内保存消息内容，即<code>reocrd</code>不为 0 时，消息会在服务器暂时保存，app 取回消息时服务端自动删除）</p>
+<p>如果要长期禁用 NotifyMe 的联网权限，建议不要使用 UUID 发送消息（UUID 超过60天未同步会从 NotifyMe 服务器删除，以节省资源。建议使用<code>token</code>+<code>pushType</code>的方式发送），以免 UUID 失效后影响正常使用。</p>
+<p>NotifyMe 服务器不会存储用户的消息。（OPPO 推送和魅族推送由于不支持透传消息，如果用户选择了在 app 内保存消息内容，即<code>reocrd</code>不为 0 时，消息会在服务器暂时保存，app 取回消息时服务端自动删除）</p>
 </blockquote>
 </li>
 </ul>
