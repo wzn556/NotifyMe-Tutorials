@@ -471,13 +471,16 @@
 <ul>
 <li>发送的 JSON 示例如下：</li>
 </ul>
-<p><div class="language-json highlight"><pre><span></span><code><span id="__LINE__-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__LINE__-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
 </span><span id="__LINE__-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">&quot;msgCloudId&quot;</span><span class="p">:</span><span class="s2">&quot;18102406649711028&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="s2">&quot;1753119526312&quot;</span>
 </span><span id="__LINE__-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
 </span></code></pre></div>
-  - <code>msgCloudId</code>（string）：消息在服务器端的Id，与<a href="#response">响应内容</a>中的相同。
-  - <code>timestamp</code>（string）：触发回调时的时间戳。</p>
+<ul>
+<li><code>msgCloudId</code>（string）：消息在服务器端的Id，与<a href="#response">响应内容</a>中的相同。</li>
+<li><code>timestamp</code>（string）：触发回调时的时间戳。
+</li>
+</ul>
 </blockquote>
 </li>
 <li><code>button</code> （obj）：通知按钮，具体内容见<a href="notification_button.html">通知按钮</a>。</li>
@@ -492,11 +495,13 @@
 </span><span id="__LINE__-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nt">&quot;msgCloudId&quot;</span><span class="p">:</span><span class="s2">&quot;18102406649711028&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nt">&quot;sendTimestamp&quot;</span><span class="p">:</span><span class="mi">1753119526312</span>
 </span><span id="__LINE__-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">}</span>
-</span></code></pre></div>
-- <code>isSuccess</code>(bool)：<code>true</code>表示请求发送成功，<code>false</code>表示请求发送失败。
-- <code>result</code>（obj）：厂商推送服务器返回的内容。
-- <code>msgCloudId</code>（string）：消息在服务器端的Id，同一条消息，响应内容和回调的<code>msgCloudId</code>的值相同。
-- <code>sendTimestamp</code>（long）：请求到达服务器时的时间戳。</p>
+</span></code></pre></div></p>
+<ul>
+<li><code>isSuccess</code>(bool)：<code>true</code>表示请求发送成功，<code>false</code>表示请求发送失败。</li>
+<li><code>result</code>（obj）：厂商推送服务器返回的内容。</li>
+<li><code>msgCloudId</code>（string）：消息在服务器端的Id，同一条消息，响应内容和回调的<code>msgCloudId</code>的值相同。</li>
+<li><code>sendTimestamp</code>（long）：请求到达服务器时的时间戳。</li>
+</ul>
 <h2 id="_3">其他</h2>
 <p>具体使用见以下<a href="usage_scenarios.html">应用场景</a>。</p>
 <ol>
