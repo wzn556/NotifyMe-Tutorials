@@ -447,12 +447,17 @@
 <h1 id="change-log">Change Log</h1>
 <h2 id="v55">v5.5<a id="v5_5"></a></h2>
 <ul>
-<li>Added: After enabling setting of Keep Alive, JPush will automatically initialize after rebooting or reinstalling.</li>
+<li>Added: After enabling Keep Alive, JPush process will start automatically after a reboot or app reinstall.</li>
+<li>Fixed: Notification click action did not take effect.</li>
+<li>Fixed: Notification click action [3], the <code>extras</code> key did not take effect.</li>
+<li>Fixed: When the push type is not JPush, the application will still pull up JPush process when launching.</li>
+<li>Fixed: Incorrect display of JPush connection status.</li>
+<li>Fixed: After swiping to clear the background application on some systems , the JPush process was restarted but failed to receive messages (It is still recommended to lock the NotifyMe card. After clearing NotifyMe from the background application for many times, some systems will block JPush process auto_restart).</li>
 </ul>
 <h2 id="v54">v5.4<a id="v5_4"></a></h2>
 <ul>
 <li>Added: When the action key is not empty, notification click action [4] of writing to the clipboard will use action key instead of body key by default.</li>
-<li>Added: support notification click action [5] to automatic copy verification codes.</li>
+<li>Added: Support notification click action [5] to automatic copy verification codes.</li>
 <li>Added: Notification button support, with up to three buttons configurable. Buttons can be assigned to existing notification click actions [0-5], with additional support for: Mark as Read [6], Mark as Delete [7], HTTP Request [8], and Text-to-Speech [9].</li>
 <li>Added: Swipe right to mark notifications as unread.</li>
 <li>Added: Clicking a notification to open the app will automatically scroll to its message card.</li>
