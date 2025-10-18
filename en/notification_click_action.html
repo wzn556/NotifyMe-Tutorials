@@ -536,8 +536,9 @@
 </table>
 <h2 id="notifyme">打开 NotifyMe<a id="start-notifyme"></a></h2>
 <ul>
-<li>当<code>actionType</code>（int）为<code>0</code>时（<code>action</code>无需设置），点击通知将打开 NotifyMe。</li>
-<li>不设置<code>actionType</code>或设置为不属于<code>0~3</code>的任意值，也会打开 Notifyme。</li>
+<li>当<code>actionType</code>（int）为<code>0</code>时（<code>action</code>（string）可设置为<code>0</code>、<code>1</code>、<code>2</code>），点击通知将打开 NotifyMe。</li>
+<li><code>action</code>默认为<code>0</code>，此时点击通知会打开 APP 并滚动至对应消息，<code>1</code>表示同时跳转至对应分组，<code>2</code>表示跳转至对应二级分组。</li>
+<li>不设置<code>actionType</code>或设置为不属于<code>0~3</code>的任意值，也会打开 NotifyMe。</li>
 </ul>
 <h3 id="_3">示例</h3>
 <div class="language-json highlight"><pre><span></span><code><span id="__LINE__-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
@@ -547,11 +548,12 @@
 </span><span id="__LINE__-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;high&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__LINE__-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="err">...</span>
-</span><span id="__LINE__-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;0&quot;</span><span class="p">,</span>
-</span><span id="__LINE__-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">            </span><span class="err">...</span>
-</span><span id="__LINE__-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__LINE__-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__LINE__-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
+</span><span id="__LINE__-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__LINE__-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="s2">&quot;0&quot;</span>
+</span><span id="__LINE__-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">            </span><span class="err">...</span>
+</span><span id="__LINE__-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__LINE__-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__LINE__-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">}</span>
 </span></code></pre></div>
 <h2 id="uri">URI 启动<a id="start-uri"></a></h2>
 <ul>
@@ -565,7 +567,7 @@
 </span><span id="__LINE__-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;high&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">      </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__LINE__-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">          </span><span class="err">...</span>
-</span><span id="__LINE__-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">          </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">          </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
 </span><span id="__LINE__-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">          </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.baidu.com&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">          </span><span class="err">...</span>
 </span><span id="__LINE__-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">      </span><span class="p">}</span>
@@ -584,7 +586,7 @@
 </span><span id="__LINE__-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;high&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__LINE__-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">            </span><span class="err">...</span>
-</span><span id="__LINE__-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;2&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
 </span><span id="__LINE__-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="s2">&quot;com.tencent.mobileqq&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">            </span><span class="err">...</span>
 </span><span id="__LINE__-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="p">}</span>
@@ -621,7 +623,7 @@
 </span><span id="__LINE__-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;high&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">        </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__LINE__-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">            </span><span class="err">...</span>
-</span><span id="__LINE__-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;3&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
 </span><span id="__LINE__-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:{</span>
 </span><span id="__LINE__-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">                </span><span class="nt">&quot;packageName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;com.google.android.gms&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">                </span><span class="nt">&quot;className&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;com.google.android.gms.gcm.GcmDiagnostics&quot;</span><span class="p">,</span>
@@ -642,7 +644,7 @@
 </span><span id="__LINE__-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;high&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">        </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__LINE__-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">            </span><span class="err">...</span>
-</span><span id="__LINE__-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;4&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
 </span><span id="__LINE__-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="s2">&quot;test text&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">            </span><span class="err">...</span>
 </span><span id="__LINE__-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">        </span><span class="p">}</span>
@@ -659,7 +661,7 @@
 </span><span id="__LINE__-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">        </span><span class="nt">&quot;priority&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;high&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">        </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__LINE__-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">            </span><span class="err">...</span>
-</span><span id="__LINE__-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="s2">&quot;4&quot;</span><span class="p">,</span>
+</span><span id="__LINE__-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">            </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
 </span><span id="__LINE__-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="s2">&quot;【XX】验证码：521847，您正在登录XXXX（若非本人操作，请删除本短信）&quot;</span><span class="p">,</span>
 </span><span id="__LINE__-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">            </span><span class="err">...</span>
 </span><span id="__LINE__-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">        </span><span class="p">}</span>
